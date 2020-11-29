@@ -1,6 +1,24 @@
+/* Primary color #757575 */
+/* Secondary color #212121 */
+/* Active color #2196f3 */
+/* Primary background color #E5E5E5 */
+/* Secondary background color #F5F4FA */
+
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --active-color: #2196f3;
+  --primary-background-color: #e5e5e5;
+  --secondary-background-color: #f5f4fa;
+  --color-white: #ffffff;
+  --color-secondary-grey: rgba(255, 255, 255, 0.6);
+  --background-button-tab: #f5f4fa;
+  --background-dark: #2f303a;
+}
+
 body {
-  background-color: #ffffff;
-  color: #757575;
+  background-color: var(--color-white);
+  color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
@@ -20,16 +38,16 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .nav .link:hover,
 .nav .link:focus {
-  color: #2196f3;
+  color: var(--active-color);
 }
 
 .nav .link.current {
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .nav-contacts .link {
@@ -37,22 +55,22 @@ li {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .nav-contacts .link:hover,
 .nav-contacts .link:focus {
-  color: #2196f3;
+  color: var(--active-color);
 }
 
 h2,
 h3 {
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .hero {
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--background-dark);
+  color: var(--color-white);
 }
 
 .hero-title {
@@ -65,15 +83,15 @@ h3 {
 }
 
 .hero-link {
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--color-white);
+  background-color: var(--active-color);
 }
 
 .features-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .feature-item {
@@ -92,7 +110,7 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.9;
-  color: #212121;
+  color: var(--secondary-text-color);
   /* text-align: center; */
 }
 
@@ -102,19 +120,19 @@ h3 {
   /* text-align: center; */
 }
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-dark);
 }
 
 .address {
   font-size: 14px;
   line-height: 1.7;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .link {
   font-size: 14px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-secondary-grey);
 }
 
 .logo {
@@ -122,11 +140,11 @@ h3 {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .accent {
-  color: #2196f3;
+  color: var(--active-color);
 }
 
 /* portfolio style */
@@ -136,24 +154,24 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background-color);
 }
 
 button:hover,
 button:focus {
-  background-color: #2196f3;
-  color: #212121;
+  background-color: var(--active-color);
+  color: var(--secondary-text-color);
 }
 
 .products .product-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--secondary-text-color);
 }
 
 .products .product-item {
   font-size: 16px;
   line-height: 1.88;
-  color: #757575;
+  color: var(--primary-text-color);
 }
